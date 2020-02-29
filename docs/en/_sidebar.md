@@ -1,11 +1,22 @@
-- [lv](/en/)
+- [<div style="display: flex; justify-content: center;">lv.js</div>](/en/)
 
-- introduction
+- basics
 
-  - [installation](installation.md)
-  - [quickstart](quickstart.md)
+  - [installation](en/basics/installation.md)
+  - [guide](en/basics/guide.md)
+  - [quickstart](en/basics/quickstart.md)
+  - [Lv instance](en/basics/instance.md)
+  - [multi value check](en/basics/multi-value-check.md)
+  - [single value check](en/basics/single-value-check.md)
+  - [set default](en/basics/set-default.md)
+  - [custom rules](en/basics/custom-rules.md)
+
+- API
+
+  - [config object](en/api/config-object.md)
+  - [validate](en/api/validate.md)
 
 - about
 
-  - [name](name.md)
-  - [design](design.md)
+  - [name](en/about/name.md)
+  - [design](en/about/design.md)
