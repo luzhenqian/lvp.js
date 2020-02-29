@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="cn-ZH">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lv.js demo</title>
+  </head>
+  <body>
+    <script src="../lib/lv.js"></script>
+    <script>
+      // 创建实例
+      var lv = new Lv();
+      // 自定义校验逻辑的函数
+      var containA = function(val) {
+        if (typeof val === "string") {
+          return /(A)/.test(val);
+        }
+        return false;
+      };
+      // 朝实例中添加函数
+      // lv.addRules({ name: "containA", logic: containA });
+
+      // 调用lv实例的test方法进行校验
+      // 多字段校验，当遇到第一个校验失败的字段时，会停止校验，并返回错误信息。
+      var passResult = lv.test([
+        // 高粒度校验，rules属性为一个数组
+        {
+          value: "张三",
+          rules: [
+            {
+              required: true,
+              message: "姓名不能为空"
+            },
+            { min: 1, max: 20, message: "姓名长度必须在2-6范围内" },
+            { name: "containA", message: "姓名不包含A" },
+            { name: "containB", message: "姓名不包含B" },
+            { name: "containC", params: ["c"], message: "姓名不包含C" }
+          ],
+          message: ""
+        },
+        // 低粒度校验，rules属性为一个对象
+        {
+          value: 22,
+          rules: {
+            required: false,
+            min: 1,
+            max: 20,
+            // 自定义的校验函数，列到custom中
+            custom: [{ name: "containA" }, { name: "containB" }],
+            message: "年龄校验失败"
+          }
+        }
+      ]);
+
+      if (passResult.status) {
+        // 校验通过的逻辑
+        // console.log(passResult.message);
+      } else {
+        // 校验失败的逻辑
+        // console.log(passResult.message);
+      }
+
+      // var tr2 = lv.test("123");
+      // var tr3 = lv.test({ value: "1@3.com", rules: ["isEmail"] });
+      // console.log(tr2, tr3);
+
+      // var isImage = lv.test({ value: "bb.png", rules: "isImage" });
+      // console.log(isImage);
+
+      var orderInfo = {
+        orderId: "tb12395x5zv4003y",
+        idCard: "37188019820918666X",
+        phone: "18854100312"
+      };
+      var tr4 = lv.test([
+        {
+          value: orderInfo.idCard,
+          rules: "isIDCard",
+          message: "身份证格式错误"
+        },
+        {
+          value: orderInfo.phone,
+          rules: "isPhone",
+          message: "手机号格式错误"
+        }
+      ]);
+      console.log(tr4);
+    </script>
+  </body>
+</html>
