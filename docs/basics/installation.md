@@ -10,7 +10,7 @@ npm i lvp.js
 
 ## CDN
 
-目前可以通过 [unpkg.com/lvp.js](https://unpkg.com/browse/lvp.js@last/) 获取到最新版本的资源，在页面上引入 js 文件即可开始使用。
+目前可以通过 [unpkg.com/lvp.js](https://unpkg.com/browse/lvp.js/) 获取到最新版本的资源，在页面上引入 js 文件即可开始使用。
 
 ```html
 <script src="https://unpkg.com/lvp.js/lib/lvp.js"></script>
