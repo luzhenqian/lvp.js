@@ -1,24 +1,24 @@
-# Lv Instance
+# LvpInstance
 
-The data verification function is absolutely single. So it is recommended to use a unique Lv instance in your application. Lv does not guarantee singletons using the singleton pattern like jQuery. Because there are multiple Lv instances at the same time, it will not affect the application.
+The data verification function is absolutely single. So it is recommended to use a unique Lvpinstance in your application. Lvpdoes not guarantee singletons using the singleton pattern like jQuery. Because there are multiple Lvpinstances at the same time, it will not affect the application.
 
 ```js
-var lv = new Lv ({ // configure });
+var lvp = new Lvp({ // configure });
 ```
 
-When creating an Lv instance, you can pass in a configuration object. You can also see a more complete list of configurations in [API Documentation] (/ api / config-object.md).
+When creating an Lvpinstance, you can pass in a configuration object. You can also see a more complete list of configurations in [API Documentation] (/ api / config-object.md).
 
 The prototype of this instance object has many built-in validation methods.
 
 ```js
 // can be viewed via this API
-Object.getPrototypeOf(lv);
+Object.getPrototypeOf(lvp);
 ```
 
-The methods you extend will be added to the Lv instance itself.
+The methods you extend will be added to the Lvpinstance itself.
 
 All validation rule attribute names can be obtained on the ruleList attribute.
 
 ```js
-lv.ruleList;
+lvp.ruleList;
 ```

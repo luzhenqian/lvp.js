@@ -6,7 +6,7 @@
 
 ```js
 var text = "hello,world.";
-var tr = lv.test({ value: text, rules: "reuqired" });
+var tr = lvp.test({ value: text, rules: "reuqired" });
 console.log(tr); // {status: true, message: "校验成功"}
 ```
 
@@ -14,22 +14,22 @@ console.log(tr); // {status: true, message: "校验成功"}
 
 设置默认值有两种方式。
 
-#### 1. 在 Lv 构造参数中设置 [推荐]
+#### 1. 在 Lvp构造参数中设置 [推荐]
 
-您可以在创建 Lv 实例时配置默认值。
+您可以在创建 Lvp实例时配置默认值。
 
 ```js
-var lv = new Lv({
+var lvp = new Lvp({
   defaultSuccessMessage: "data test success",
   defaultErrorMessage: "data test error"
 });
 ```
 
-#### 2. 修改 lv 实例属性 [不推荐]
+#### 2. 修改 lvp 实例属性 [不推荐]
 
-由于 defaultSuccessMessage 和 defaultErrorMessage 都是挂载在 lv 实例上的两个属性，所以您也可以直接通过修改这两个属性来修改默认提示的值。
+由于 defaultSuccessMessage 和 defaultErrorMessage 都是挂载在 lvp 实例上的两个属性，所以您也可以直接通过修改这两个属性来修改默认提示的值。
 
 ```js
-lv.defaultSuccessMessage = "data test success";
-lv.defaultErrorMessage = "data test error";
+lvp.defaultSuccessMessage = "data test success";
+lvp.defaultErrorMessage = "data test error";
 ```

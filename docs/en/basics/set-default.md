@@ -6,7 +6,7 @@ The following code:
 
 ```js
 var text = "hello, world.";
-var tr = lv.test({ value: text, rules: "reuqired" });
+var tr = lvp.test({ value: text, rules: "reuqired" });
 console.log(tr); // {status: true, message: "Verification succeeded"}
 ```
 
@@ -14,22 +14,22 @@ The "verification successful" here is the default value. Correspondingly, "verif
 
 There are two ways to set the default.
 
-#### 1. Set in the Lv construction parameter [Recommended]
+#### 1. Set in the Lvpconstruction parameter [Recommended]
 
-You can configure default values when creating an Lv instance.
+You can configure default values when creating an Lvpinstance.
 
 ```js
-var lv = new Lv({
+var lvp = new Lvp({
   defaultSuccessMessage: "data test success",
   defaultErrorMessage: "data test error"
 });
 ```
 
-#### 2. Modify lv instance properties [Not recommended]
+#### 2. Modify lvp instance properties [Not recommended]
 
-Since defaultSuccessMessage and defaultErrorMessage are two properties mounted on the lv instance, you can also modify the value of the default prompt directly by modifying these two properties.
+Since defaultSuccessMessage and defaultErrorMessage are two properties mounted on the lvp instance, you can also modify the value of the default prompt directly by modifying these two properties.
 
 ```js
-lv.defaultSuccessMessage = "data test success";
-lv.defaultErrorMessage = "data test error";
+lvp.defaultSuccessMessage = "data test success";
+lvp.defaultErrorMessage = "data test error";
 ```

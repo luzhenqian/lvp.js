@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // es5 to es6
-// idea: lv.min.js to lv.mjs
+// idea: lvp.min.js to lvp.mjs
 
-// command: 5t6 lv.min.js -o lv.mjs -ed lv -e x
+// command: 5t6 lvp.min.js -o lvp.mjs -ed lvp -e x
 
 // -o output缩写，输出文件
 // -ed export default 缩写 后面的参数可以是函数名也可以是对象名

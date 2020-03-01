@@ -1,11 +1,11 @@
-- [<div style="display: flex; justify-content: center;">lv.js</div>](/)
+- [<div style="display: flex; justify-content: center;">lvp.js</div>](/)
 
 - 基础
 
   - [安装](basics/installation.md)
   - [介绍](basics/guide.md)
   - [快速上手](basics/quickstart.md)
-  - [Lv 实例](basics/instance.md)
+  - [Lvp实例](basics/instance.md)
   - [多值校验](basics/multi-value-check.md)
   - [单值校验](basics/single-value-check.md)
   - [设定默认值](basics/set-default.md)

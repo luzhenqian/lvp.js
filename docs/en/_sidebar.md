@@ -1,11 +1,11 @@
-- [<div style="display: flex; justify-content: center;">lv.js</div>](/en/)
+- [<div style="display: flex; justify-content: center;">lvp.js</div>](/en/)
 
 - basics
 
   - [installation](en/basics/installation.md)
   - [guide](en/basics/guide.md)
   - [quickstart](en/basics/quickstart.md)
-  - [Lv instance](en/basics/instance.md)
+  - [Lvpinstance](en/basics/instance.md)
   - [multi value check](en/basics/multi-value-check.md)
   - [single value check](en/basics/single-value-check.md)
   - [set default](en/basics/set-default.md)

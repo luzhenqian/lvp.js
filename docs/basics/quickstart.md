@@ -1,21 +1,21 @@
 # 快速上手
 
-理论上讲，lv.js 是的完全无入侵性的库，它可以运行在浏览器或者 node.js 上，和任何库与框架都不会有兼容性的冲突。
+理论上讲，lvp.js 是的完全无入侵性的库，它可以运行在浏览器或者 node.js 上，和任何库与框架都不会有兼容性的冲突。
 
 代码默认以 ES6 来演示。
 
 ```js
-import Lv from "lv.js";
-const lv = new Lv();
+import Lvpfrom "lvp.js";
+const lvp = new Lvp();
 ```
 
-Lv 默认导出的是一个构造函数，后续的校验，都通过操作 Lv 实例对象来完成。
+Lvp默认导出的是一个构造函数，后续的校验，都通过操作 Lvp实例对象来完成。
 
-Lv 支持验证两种类型的数据，string 和 number。
+Lvp支持验证两种类型的数据，string 和 number。
 
-Lv 实例对象有一个 test 方法，这是用于校验的主方法。被校验的值，称为 value。
+Lvp实例对象有一个 test 方法，这是用于校验的主方法。被校验的值，称为 value。
 
-Lv 的校验方式大致分为两种，一种是批量校验，一种是单值校验。下面来演示这两种校验的效果。
+Lvp的校验方式大致分为两种，一种是批量校验，一种是单值校验。下面来演示这两种校验的效果。
 
 ## 多值校验
 
@@ -33,7 +33,7 @@ var userInfo = {
 校验规则是以中国姓名为准则，查看姓名是否正确；年龄在 18 岁以上；个人背景在 8 到 100 个字符之间。
 
 ```js
-var testResult = lv.test([
+var testResult = lvp.test([
   {
     value: userInfo.name,
     rules: "isCnName"
@@ -70,7 +70,7 @@ if (testResult.status) {
 以下是一个校验邮箱是否合规的例子：
 
 ```js
-var isEmail = lv.test({
+var isEmail = lvp.test({
   value: "aili001010@gmail.com",
   rules: [{ name: "isEmail", message: "邮箱格式不正确" }]
 });

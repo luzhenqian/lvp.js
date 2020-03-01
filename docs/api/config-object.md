@@ -1,6 +1,6 @@
 # 配置对象
 
-Lv 的构造参数是一个配置对象，称为 lvOption。可以在创建 lv 实例对象时传入配置信息，影响 lv 实例对象的行为。
+Lvp的构造参数是一个配置对象，称为 lvpOption。可以在创建 lvp 实例对象时传入配置信息，影响 lvp 实例对象的行为。
 
 ## defaultSuccessMessage
 

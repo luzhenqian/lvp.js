@@ -1,9 +1,9 @@
 import Vue from "vue";
 import App from "./App.vue";
-import Lv from "../../../lib/lv";
+import Lvpfrom "../../../lib/lvp";
 
-const lv = new Lv();
-Vue.prototype.$lv = lv;
+const lvp = new Lvp();
+Vue.prototype.$lvp = lv;
 Vue.config.productionTip = false;
 
 new Vue({

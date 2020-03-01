@@ -1,20 +1,21 @@
 {
-  "name": "lv.js",
+  "name": "lvp.js",
   "version": "0.0.1",
   "description": "A javaScript data validation library",
-  "main": "lib/lv.min.js",
-  "browser": "lib/lv.min.js",
-  "module": "lib/lv.mjs",
+  "main": "lib/lvp.min.js",
+  "browser": "lib/lvp.min.js",
+  "module": "lib/lvp.mjs",
   "bin": {
     "5t6": "utils/es5ToEs6.js"
   },
   "scripts": {
     "test": "jest --coverage",
-    "uglify": "uglifyjs lib/lv.js -o lib/lv.min.js -c drop_console -m",
+    "uglify": "uglifyjs lib/lvp.js -o lib/lvp.min.js -c drop_console -m",
     "docs": "docsify serve docs",
-    "5t6": "5t6 -i lib/lv.min.js -o lib/lv.mjs -ed Lv",
+    "5t6": "5t6 -i lib/lvp.min.js -o lib/lvp.mjs -ed Lvp",
     "build": "npm run uglify && npm run 5t6",
-    "vue-demo": "cd example/vue-demo && npm run serve"
+    "vue-demo": "cd example/vue-demo && npm run serve",
+    "pub": "npm run build && npm publish"
   },
   "keywords": [
     "validation",

@@ -1,7 +1,7 @@
 export default Lv;
 export as namespace Lv;
 
-declare namespace Lv {
+declare namespace Lvp{
   const Rules: IRules;
   const Result: IResult;
 

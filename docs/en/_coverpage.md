@@ -1,4 +1,4 @@
-# Lv.js <small>0.0.1</small>
+# Lvp.js <small>0.0.1</small>
 
 > A data validation library
 

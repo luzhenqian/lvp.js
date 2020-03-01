@@ -1,6 +1,6 @@
-var Lv = require("../lib/lv");
-var lv = new Lv();
-var testResult = lv.test([
+var Lvp= require("../lib/lvp");
+var lvp = new Lvp();
+var testResult = lvp.test([
   {
     value: 3,
     rules: [{ min: 2, message: "最小不能为2" }]
@@ -10,4 +10,4 @@ var testResult = lv.test([
 console.log(`test result status: ${testResult.status}`);
 console.log(`test result message: ${testResult.message}`);
 
-var tr2 = lv.test("123");
+var tr2 = lvp.test("123");

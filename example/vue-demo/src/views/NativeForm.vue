@@ -47,7 +47,7 @@ export default {
   methods: {
     submitHandler(e) {
       e.preventDefault();
-      const testResult = this.$lv.test([
+      const testResult = this.$lvp.test([
         {
           value: this.name,
           rules: [

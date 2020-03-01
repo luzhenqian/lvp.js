@@ -1,19 +1,19 @@
 # Quick start
 
-In theory, lv.js is a completely non-invasive library. It can run on the browser or node.js, and there will be no compatibility conflict with any library and framework.
+In theory, lvp.js is a completely non-invasive library. It can run on the browser or node.js, and there will be no compatibility conflict with any library and framework.
 
 The code is demonstrated by ES6 by default.
 
 ```js
-import Lv from "lv.js";
-const lv = new Lv();
+import Lvpfrom "lvp.js";
+const lvp = new Lvp();
 ```
 
-Lv exports a constructor by default, and subsequent verifications are performed by manipulating the Lv instance object.
+Lvpexports a constructor by default, and subsequent verifications are performed by manipulating the Lvpinstance object.
 
-Lv supports two types of data validation, string and number.
+Lvpsupports two types of data validation, string and number.
 
-The Lv instance object has a test method, which is the main method for validation. The value being checked is called value.
+The Lvpinstance object has a test method, which is the main method for validation. The value being checked is called value.
 
 Lv's verification methods are roughly divided into two types, one is batch verification, and the other is single value verification. Let's demonstrate the effect of these two checks.
 
@@ -33,7 +33,7 @@ var userInfo = {
 The verification rules are based on Chinese names to see if they are correct; they are over 18 years of age; their personal background is between 8 and 100 characters.
 
 ```js
-var testResult = lv.test([
+var testResult = lvp.test([
   {
     value: userInfo.name,
     rules: "isCnName"
@@ -71,7 +71,7 @@ There is no essential difference between single-value verification and multi-val
 The following is an example of verifying compliance of a mailbox:
 
 ```js
-var isEmail = lv.test({
+var isEmail = lvp.test({
   value: "aili001010@gmail.com",
   rules: [{ name: "isEmail", message: "The mailbox format is incorrect" }]
 });

@@ -1,6 +1,6 @@
 # Multi-value check
 
-It is more recommended that you use multi-value validation to validate your data, as form validation is one of the main use cases for Lv.
+It is more recommended that you use multi-value validation to validate your data, as form validation is one of the main use cases for Lvp.
 
 For example, in your program, there is the following order data, including the order number, ID card number and mobile phone number.
 
@@ -15,8 +15,8 @@ var orderInfo = {
 You want to verify that the ID card and phone number are compliant, then you can use multi-value verification. The following is the verification method.
 
 ```js
-var lv = new Lv();
-var tr = lv.test([
+var lvp = new Lvp();
+var tr = lvp.test([
   {
     value: orderInfo.idCard,
     rules: "isIDCard",
@@ -30,7 +30,7 @@ var tr = lv.test([
 ]);
 ```
 
-When the lv object is multi-valued, it receives an Array type configuration object parameter. The configuration object needs to have 3 attributes.
+When the lvp object is multi-valued, it receives an Array type configuration object parameter. The configuration object needs to have 3 attributes.
 
 | value                                                                              | rules                                                         | message                                              |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------- | ---------------------------------------------------- |
@@ -56,12 +56,12 @@ if (tr.status) {
 }
 ```
 
-Note: When the format of the configuration object parameters passed in the call to lv.test is incorrect, lv will automatically ignore the verification rules and consider the verification to pass.
+Note: When the format of the configuration object parameters passed in the call to lvp.test is incorrect, lvp will automatically ignore the verification rules and consider the verification to pass.
 
 For example, the following code:
 
 ```js
-var tr2 = lv.test([{ value: "🐻", rules: 1 }]);
+var tr2 = lvp.test([{ value: "🐻", rules: 1 }]);
 ```
 
 The value of tr2 at this time is `{status: true, message:" Verification succeeded "}`.
@@ -69,7 +69,7 @@ The value of tr2 at this time is `{status: true, message:" Verification succeede
 If you are in development mode, you can get a prompt similar to the following in the console:
 
 ```text
-lv warn: Validation rules The rule parameter type is not supported. The current behavior of the incoming parameter class: number, rules only support Array and String type parameters.
+lvp warn: Validation rules The rule parameter type is not supported. The current behavior of the incoming parameter class: number, rules only support Array and String type parameters.
 ```
 
 If you are using source code from a production environment, the console will not prompt you.
