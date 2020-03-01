@@ -15,6 +15,7 @@
 
   - [配置对象](api/config-object.md)
   - [校验](api/validate.md)
+  - [内置规则](api/built-in-rules.md)
 
 - 关于
 

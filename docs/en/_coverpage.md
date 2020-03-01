@@ -3,5 +3,5 @@
 > A data validation library
 
 - Cross Js platform
-- Easy to use, ultra small size (~ 2.5kB)
+- Easy to use, ultra small size
 - Highly customizable and non-invasive

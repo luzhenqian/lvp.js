@@ -15,6 +15,7 @@
 
   - [config object](en/api/config-object.md)
   - [validate](en/api/validate.md)
+  - [built in rules](en/api/built-in-rules.md)
 
 - about
 

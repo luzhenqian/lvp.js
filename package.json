@@ -23,7 +23,7 @@
     "valid"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "jest": "^25.1.0"
   }

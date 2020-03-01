@@ -10,7 +10,7 @@ Lv 的目标是解决业务上的问题。所以 Lv 的核心不是在编程层�
 
 Lv 不会干预表单或者输入事件，尽管表单校验是 Lv 主要的应用场景之一。Lv 在何时使用，完全由您决定。您也可以扩展原有的校验规则，添加您需要的自定义规则。
 
-Lv 的适用平台非常广泛，支持浏览器、node.js、~~Typescript~~。同时也支持浏览器 browser 规范、node.js Common-like 规范、AMD 规范、ESM 规范。与任何框架都不会产生兼容性的问题，比如 React、jQuery、Vue 等。
+Lv 的适用平台非常广泛，支持浏览器、node.js、~~Typescript~~。同时也支持 node.js Common-like 规范、AMD 规范、ESM 规范。与任何框架都不会产生兼容性的问题，比如 React、jQuery、Vue 等。
 
 ## 关于组合校验
 

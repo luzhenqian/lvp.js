@@ -12,7 +12,7 @@
 
 ```js
 var phone = "15555555555";
-var isPhone = lv.test({ value: phone, rules: "isPhone" });
+var isPhone = lv.test({ value: phone, rules: "isCNPhone" });
 ```
 
 这样做的好处是，即使您的 rules 规则填写错误，也不会产生任何影响程序继续运行的异常。

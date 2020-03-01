@@ -12,7 +12,7 @@ For example, check if the phone number is normal.
 
 ```js
 var phone = "15555555555";
-var isPhone = lv.test({ value: phone, rules: "isPhone" });
+var isPhone = lv.test({ value: phone, rules: "isCNPhone" });
 ```
 
 The advantage of this is that even if your rules are incorrectly filled, there will not be any exceptions that affect the continued operation of the program.

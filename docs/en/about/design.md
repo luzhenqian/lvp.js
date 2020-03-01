@@ -10,7 +10,7 @@ The goal of Lv is to solve business problems. So the core of Lv is not at the pr
 
 Lv does not interfere with forms or input events, although form validation is one of the main application scenarios for Lv. When Lv is used is entirely up to you. You can also extend the original validation rules to add your own custom rules.
 
-Lv's applicable platform is very extensive, supporting browser, node.js, ~~ Typescript ~~. It also supports browser specifications, node.js Common-like specifications, AMD specifications, and ESM specifications. No compatibility issues with any framework, such as React, jQuery, Vue, etc.
+Lv's applicable platform is very extensive, supporting browser, node.js, ~~Typescript~~. It also supports node.js Common-like specifications, AMD specifications, and ESM specifications. No compatibility issues with any framework, such as React, jQuery, Vue, etc.
 
 ## About combination check
 
@@ -36,19 +36,40 @@ Let's talk about several features of lv.js:
 
 There are many libraries that implement such chained calls.
 
-`` `js var price = 12; validator .test (price) .required () .min (8) .max (60); `` `
+```js
+var price = 12;
+validator
+  .test(price)
+  .required()
+  .min(8)
+  .max(60);
+```
 
 In fact, lv.js also tried to do this in the early development stage, and the problem was that it was not easy to handle when customizing extended validation functions. But there are still at least two solutions.
 
 The first solution is to use the square bracket `[]` method, and continue to use the pseudo code above.
 
-`` `js validator .test (price) .required () .min (8) .max (60) ["isDiscount"] (); `` `
+```js
+validator
+  .test(price)
+  .required()
+  .min(8)
+  .max(60)
+  ["isDiscount"]();
+```
 
 The biggest problem with this method is that once the user misspells the function name, it will cause the highest level of code error in js, and the subsequent code will be suspended. As a library, this design is not desirable.
 
 The second scheme is to add a uniform interface to adapt before calling the custom function, and then process and call the custom function correctly in the custom function.
 
-`` `js validator .test (price) .required () .min (8) .max (60) .custom (["isDiscount"]); `` `
+```js
+validator
+  .test(price)
+  .required()
+  .min(8)
+  .max(60)
+  .custom(["isDiscount"]);
+```
 
 Although this problem can be solved, the author still believes that the configuration method is relatively better.
 

@@ -4,12 +4,12 @@
 
 Lv 实例用于校验数据的方法。
 
-参数：{object|[]}
+参数：`{object|[]}`
 
 ## addRules
 
 添加自定义的规则。
-实例：
+示例：
 
 ```js
 addRules([
