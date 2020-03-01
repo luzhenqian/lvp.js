@@ -13,11 +13,11 @@ npm i lvp.js
 目前可以通过 [unpkg.com/lvp.js](https://unpkg.com/browse/lvp.js@last/) 获取到最新版本的资源，在页面上引入 js 文件即可开始使用。
 
 ```html
-<script src="https://unpkg.com/lvp.js/lib/index.js"></script>
+<script src="https://unpkg.com/lvp.js/lib/lvp.js"></script>
 ```
 
 如果应用于开发环境，请使用压缩版本。
 
 ```html
-<script src="https://unpkg.com/lvp.js/lib/index.min.js"></script>
+<script src="https://unpkg.com/lvp.js/lib/lvp.min.js"></script>
 ```
