@@ -17,7 +17,7 @@ npm i lvp.js
 or cnd
 
 ```html
-<script src="https://unpkg.com/browse/lvp.js/lib/lvp.js"></script>
+<script src="https://unpkg.com/lvp.js/lib/lvp.js"></script>
 ```
 
 ## Documentation

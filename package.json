@@ -1,6 +1,6 @@
 {
   "name": "lvp.js",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "A javaScript data validation library",
   "main": "lib/lvp.min.js",
   "browser": "lib/lvp.min.js",
