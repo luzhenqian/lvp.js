@@ -5,17 +5,17 @@ In theory, lvp.js is a completely non-invasive library. It can run on the browse
 The code is demonstrated by ES6 by default.
 
 ```js
-import Lvpfrom "lvp.js";
+import Lvp from "lvp.js";
 const lvp = new Lvp();
 ```
 
-Lvpexports a constructor by default, and subsequent verifications are performed by manipulating the Lvpinstance object.
+Lvp exports a constructor by default, and subsequent verifications are performed by manipulating the Lvp instance object.
 
-Lvpsupports two types of data validation, string and number.
+Lvp supports two types of data validation, string and number.
 
-The Lvpinstance object has a test method, which is the main method for validation. The value being checked is called value.
+The Lvp instance object has a test method, which is the main method for validation. The value being checked is called value.
 
-Lv's verification methods are roughly divided into two types, one is batch verification, and the other is single value verification. Let's demonstrate the effect of these two checks.
+Lvp's verification methods are roughly divided into two types, one is batch verification, and the other is single value verification. Let's demonstrate the effect of these two checks.
 
 ## Multi-value check
 
