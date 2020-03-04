@@ -1,10 +1,10 @@
 # Name
 
-## Why is it called Lv?
+## Why is it called Lvp?
 
 1. lvp is simple and easy to remember.
 
-2. The author likes LOUIS VUITTON (Lvpfor short).
+2. The author likes LOUIS VUITTON (Lv for short).
 
 3. l is the first letter of the first word of the author's name, and v is the first letter of validation.
 

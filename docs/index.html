@@ -12,13 +12,18 @@
     <!-- <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css" /> -->
     <link rel="stylesheet" href="./_js/docsify@4.10.2.vue.css" />
     <link rel="icon" href="./_media/logo.png" />
+    <style>
+      img[alt="lvp"] {
+        width: 5rem;
+      }
+    </style>
   </head>
   <body>
     <div id="app"></div>
     <script>
       window.$docsify = {
         coverpage: ["/", "/en/"],
-        name: "",
+        name: "lvp",
         loadNavbar: true, // 自定义导航文件
         loadSidebar: true, // 侧边栏
         autoHeader: true, // 将页眉添加到页面前
@@ -43,7 +48,7 @@
             "/en": "Copied"
           }
         }, // 复制文字多语言
-        logo: "/_media/logo.png", // 左侧 logo
+        logo: "/_media/logo_2.png", // 左侧 logo
         themeColor: "rgb(239, 83, 80)", // 主题色
         // 搜索插件 必须让 md 文件中的标题 是 ## 以上
         search: {

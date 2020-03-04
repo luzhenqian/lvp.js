@@ -19,7 +19,7 @@ The advantage of this is that even if your rules are incorrectly filled, there w
 
 #### 2. Call using method name [Not recommended]
 
-Lvpdoes not restrict calling methods on the lvp instance directly. You can directly call methods on the lvp instance, or use square brackets [[] `.
+Lvp does not restrict calling methods on the lvp instance directly. You can directly call methods on the lvp instance, or use square brackets [[] `.
 
 Take the verification mobile phone number as an example:
 

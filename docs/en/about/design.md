@@ -4,11 +4,11 @@
 
 Lv's core logic is very simple. It does not depend on any other libraries, so its package size is very small.
 
-Small and extraordinary, Lvphas a perfect edge detection mechanism.
+Small and extraordinary, Lvp has a perfect edge detection mechanism.
 
-The goal of Lvpis to solve business problems. So the core of Lvpis not at the programming level, but more at the business level. Lvpbuilt-in method list will not have methods like isDate, isNumber, isFunction. Because the industry already has many excellent solutions to these problems. Lvpis more about business things, such as checking e-mail, ID cards, telephones and other things.
+The goal of Lvp is to solve business problems. So the core of Lvp is not at the programming level, but more at the business level. Lvp built-in method list will not have methods like isDate, isNumber, isFunction. Because the industry already has many excellent solutions to these problems. Lvp is more about business things, such as checking e-mail, ID cards, telephones and other things.
 
-Lvpdoes not interfere with forms or input events, although form validation is one of the main application scenarios for Lvp. When Lvpis used is entirely up to you. You can also extend the original validation rules to add your own custom rules.
+Lvp does not interfere with forms or input events, although form validation is one of the main application scenarios for Lvp. When Lvp is used is entirely up to you. You can also extend the original validation rules to add your own custom rules.
 
 Lv's applicable platform is very extensive, supporting browser, node.js, ~~Typescript~~. It also supports node.js Common-like specifications, AMD specifications, and ESM specifications. No compatibility issues with any framework, such as React, jQuery, Vue, etc.
 

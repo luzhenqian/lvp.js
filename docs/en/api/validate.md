@@ -2,7 +2,7 @@
 
 ## test
 
-Lvpinstance method used to verify the data.
+Lvp instance method used to verify the data.
 
 Parameter: {object | []}
 

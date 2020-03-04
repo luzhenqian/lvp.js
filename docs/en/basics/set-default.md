@@ -14,9 +14,9 @@ The "verification successful" here is the default value. Correspondingly, "verif
 
 There are two ways to set the default.
 
-#### 1. Set in the Lvpconstruction parameter [Recommended]
+#### 1. Set in the Lvp construction parameter [Recommended]
 
-You can configure default values when creating an Lvpinstance.
+You can configure default values when creating an Lvp instance.
 
 ```js
 var lvp = new Lvp({

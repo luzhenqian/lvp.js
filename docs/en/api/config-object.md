@@ -1,6 +1,6 @@
 # Configuration object
 
-The construction parameter of Lvpis a configuration object called lvpOption. Configuration information can be passed in when creating the lvp instance object, which affects the behavior of the lvp instance object.
+The construction parameter of Lvp is a configuration object called lvp Option. Configuration information can be passed in when creating the lvp instance object, which affects the behavior of the lvp instance object.
 
 ## defaultSuccessMessage
 

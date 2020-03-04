@@ -14,9 +14,9 @@ console.log(tr); // {status: true, message: "校验成功"}
 
 设置默认值有两种方式。
 
-#### 1. 在 Lvp构造参数中设置 [推荐]
+#### 1. 在 Lvp 构造参数中设置 [推荐]
 
-您可以在创建 Lvp实例时配置默认值。
+您可以在创建 Lvp 实例时配置默认值。
 
 ```js
 var lvp = new Lvp({
