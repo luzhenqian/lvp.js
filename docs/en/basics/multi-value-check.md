@@ -19,12 +19,12 @@ var lvp = new Lvp();
 var tr = lvp.test([
   {
     value: orderInfo.idCard,
-    rules: "isIDCard",
+    rules: "isCNIDCard",
     message: "Incorrect ID format"
   },
   {
     value: orderInfo.phone,
-    rules: "isPhone",
+    rules: "isCNPhone",
     message: "Mobile phone number is malformed"
   }
 ]);

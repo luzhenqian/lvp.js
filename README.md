@@ -30,7 +30,7 @@ This is a simple example of a single value check,for more detailed examples, ple
 
 ```js
 var phone = "15555555555";
-var isPhone = lvp.test({ value: phone, rules: "isCNPhone" });
+var isCNPhone = lvp.test({ value: phone, rules: "isCNPhone" });
 ```
 
 ## Other

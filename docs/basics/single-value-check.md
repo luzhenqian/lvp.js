@@ -12,7 +12,7 @@
 
 ```js
 var phone = "15555555555";
-var isPhone = lvp.test({ value: phone, rules: "isCNPhone" });
+var isCNPhone = lvp.test({ value: phone, rules: "isCNPhone" });
 ```
 
 这样做的好处是，即使您的 rules 规则填写错误，也不会产生任何影响程序继续运行的异常。
@@ -25,19 +25,19 @@ Lvp 并没有限制直接调用 lvp 实例上的方法，您可以直接调用 l
 
 ```js
 var phone = "15555555555";
-var isPhone = lvp.isPhone(phone);
+var isCNPhone = lvp.isCNPhone(phone);
 // or
-// var isPhone = lv['isPhone'](phone);
+// var isCNPhone = lv['isCNPhone'](phone);
 ```
 
-此时的返回值 isPhone 就是一个 boolean 值。
+此时的返回值 isCNPhone 就是一个 boolean 值。
 
 但是这样调用，就有可能得到一个直接中断后续程序运行的异常。
 
 假设您的函数名不小心写错了：
 
 ```js
-var isPhone = lvp.isphone(phone);
+var isCNPhone = lvp.isphone(phone);
 ```
 
 就会得到致命的错误：
@@ -49,8 +49,8 @@ Uncaught TypeError: lvp.isphone is not a function
 所以，您必须写类似如下代码来防止代码的异常：
 
 ```js
-var isPhone =
-  "isPhone" in lvp && "function" == typeof lvp.isPhone && lvp.isPhone(phone);
+var isCNPhone =
+  "isCNPhone" in lvp && "function" == typeof lvp.isCNPhone && lvp.isCNPhone(phone);
 ```
 
 不建议您这么做的另一个原因是，这种做法和您直接写一个校验函数来调用没什么两样。既然如此，为什么还需要使用这个库呢？

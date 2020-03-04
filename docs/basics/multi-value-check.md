@@ -19,12 +19,12 @@ var lvp = new Lvp();
 var tr = lvp.test([
   {
     value: orderInfo.idCard,
-    rules: "isIDCard",
+    rules: "isCNIDCard",
     message: "身份证格式错误"
   },
   {
     value: orderInfo.phone,
-    rules: "isPhone",
+    rules: "isCNPhone",
     message: "手机号格式错误"
   }
 ]);
