@@ -1,0 +1,10 @@
+.vscode
+coverage
+docs
+example
+test
+utils
+
+.gitignore
+package-lock.json
+LICENSE

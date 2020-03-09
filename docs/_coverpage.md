@@ -1,4 +1,4 @@
-# Lvp.js <small>0.0.5</small>
+# Lvp.js <small>0.0.6</small>
 
 > 一个数据校验库
 

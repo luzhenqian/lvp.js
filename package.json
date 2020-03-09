@@ -1,7 +1,12 @@
 {
   "name": "lvp.js",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "A javaScript data validation library",
+  "homepage": "https://lvp.js.org/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luzhenqian/lvp.js.git"
+  },
   "main": "lib/lvp.min.js",
   "browser": "lib/lvp.min.js",
   "module": "lib/lvp.mjs",
@@ -26,7 +31,7 @@
     "lvpjs",
     "lvp.js"
   ],
-  "author": "",
+  "author": "luzhenqian",
   "license": "MIT",
   "devDependencies": {
     "jest": "^25.1.0"
